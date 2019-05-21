@@ -26,8 +26,12 @@
         });
         
         map.addControl(new MapboxGeocoder({
-        accessToken: mapboxgl.accessToken,
-        mapboxgl: mapboxgl
+            accessToken: mapboxgl.accessToken,
+            mapboxgl: mapboxgl,
+            // use queryOptions to specify URL parameters, such as `country` https://www.mapbox.com/api-documentation/#geocoding
+            queryOptions: {
+                country: "us"
+            }
         }));
         </script>
     </body>
