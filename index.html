@@ -19,10 +19,10 @@
         <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoiamFja3ZpYWwiLCJhIjoiY2p2eTBqZzllMGF4cDN6bWlvMjB6c3c2eiJ9.lNcU0jWChHe5ZH0B6rrH2w';
         var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center: [40.026, -75.328],
-        zoom: 13
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [-74.50, 40], // starting position
+            zoom: 9 // starting zoom
         });
         
         map.addControl(new MapboxGeocoder({
